@@ -1,0 +1,37 @@
+/// Recursive and iterative Fibonacci in B.E.L.
+
+fn fib_recursive(n: u64) -> u64 {
+    if n <= 1 {
+        n
+    } else {
+        fib_recursive(n - 1) + fib_recursive(n - 2)
+    }
+}
+
+fn fib_iterative(n: u64) -> u64 {
+    if n <= 1 {
+        return n;
+    }
+    
+    let mut a: u64 = 0;
+    let mut b: u64 = 1;
+    let mut i: u64 = 2;
+    
+    loop {
+        if i > n {
+            break;
+        }
+        let next = a + b;
+        a = b;
+        b = next;
+        i = i + 1;
+    }
+    
+    b
+}
+
+fn main() {
+    let n: u64 = 10;
+    println("fib_recursive({}) = {}", n, fib_recursive(n));
+    println("fib_iterative({}) = {}", n, fib_iterative(n));
+}

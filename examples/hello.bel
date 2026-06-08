@@ -1,0 +1,20 @@
+/// Hello World in B.E.L.
+/// Demonstrates basic syntax, functions, and the main entry point.
+
+fn main() {
+    println("Hello, B.E.L.!");
+    
+    let name = "World";
+    greet(name);
+    
+    let sum = add(40, 2);
+    println("The answer is {}", sum);
+}
+
+fn greet(name: &str) {
+    println("Greetings, {}!", name);
+}
+
+fn add(a: i32, b: i32) -> i32 {
+    a + b
+}

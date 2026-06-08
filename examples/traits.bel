@@ -1,0 +1,12 @@
+trait Drawable {
+    fn draw(&self);
+}
+
+struct Circle {
+    radius: f64,
+}
+
+fn main() {
+    println("Traits and impl blocks are core to B.E.L.");
+    println("See docs/language-spec.md and RFCs for full design.");
+}

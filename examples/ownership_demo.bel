@@ -1,0 +1,7 @@
+fn main() {
+    println("Ownership demo (prototype)");
+    let x = 42;
+    let y = x;
+    println("x = {}, y = {}", x, y);
+    println("In real B.E.L. this would demonstrate full ownership + borrowing rules.");
+}

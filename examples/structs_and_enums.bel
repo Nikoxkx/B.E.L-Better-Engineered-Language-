@@ -1,0 +1,21 @@
+struct Point {
+    x: f64,
+    y: f64,
+}
+
+enum Color {
+    Red,
+    Green,
+    Blue,
+}
+
+fn describe_color(c: Color) {
+    // Simplified match for prototype
+    println("Color variant");
+}
+
+fn main() {
+    let p = Point { x: 1.0, y: 2.5 };
+    println("Point at ({}, {})", p.x, p.y);
+    describe_color(Color::Red);
+}

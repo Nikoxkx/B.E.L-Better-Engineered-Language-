@@ -1,0 +1,11 @@
+fn main() {
+    println("B.E.L. Prototype Demo");
+    
+    let x = 5;
+    let y = 7;
+    let sum = x + y;
+    println("5 + 7 = {}", sum);
+    
+    println("This prototype validates core language design.");
+    println("The real B.E.L. compiler will be far more powerful.");
+}

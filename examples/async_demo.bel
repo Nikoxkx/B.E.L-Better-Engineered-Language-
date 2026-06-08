@@ -1,0 +1,17 @@
+/// Async/await stub (prototype shows the syntax).
+
+async fn fetch_data() -> string {
+    // In real implementation this would do real async I/O
+    "data from network"
+}
+
+async fn process() {
+    let data = await fetch_data();
+    println("Processed: {}", data);
+}
+
+fn main() {
+    // In prototype this is just syntax demonstration
+    println("Async syntax is supported in the language.");
+    println("Real async runtime will be provided by belc.");
+}

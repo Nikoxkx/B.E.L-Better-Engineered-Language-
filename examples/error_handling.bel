@@ -1,0 +1,17 @@
+enum Result {
+    Ok,
+    Err,
+}
+
+fn divide(a: i32, b: i32) -> Result {
+    if b == 0 {
+        Result::Err
+    } else {
+        Result::Ok
+    }
+}
+
+fn main() {
+    let res = divide(10, 2);
+    println("Division attempted (prototype shows syntax only)");
+}

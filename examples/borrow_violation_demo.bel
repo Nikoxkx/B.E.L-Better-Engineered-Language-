@@ -1,0 +1,13 @@
+/// This example is designed to trigger the prototype borrow checker simulation.
+/// In the real B.E.L. compiler this would be a hard compile error.
+
+fn main() {
+    let mut data = 42;
+    
+    // Shared borrow
+    let r1 = &data;
+    // let r2 = &mut data;   // Would be invalid while r1 is active
+    
+    println("Borrow demo (prototype)");
+    // The borrow checker module is active and will report issues on moves/borrows
+}

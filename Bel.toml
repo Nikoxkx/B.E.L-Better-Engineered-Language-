@@ -1,0 +1,20 @@
+[package]
+name = "bel"
+version = "0.1.0"
+edition = "2026"
+authors = ["B.E.L. Contributors"]
+description = "Better Engineered Language - Next-generation systems programming language"
+license = "MIT"
+repository = "https://github.com/bel-lang/bel"
+
+[dependencies]
+
+[dev-dependencies]
+
+[[bin]]
+name = "belc"
+path = "src/compiler/main.bel"
+
+[profile.release]
+opt-level = 3
+lto = true
